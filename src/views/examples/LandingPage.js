@@ -15,7 +15,7 @@ import {
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import LandingPageHeader from "components/Headers/LandingPageHeader.js";
-import DefaultFooter from "components/Footers/DefaultFooter.js";
+import DarkFooter from "components/Footers/DarkFooter.js";
 
 function LandingPage() {
   const [firstFocus, setFirstFocus] = React.useState(false);
@@ -40,13 +40,16 @@ function LandingPage() {
           <Container>
             <Row>
               <Col className="ml-auto mr-auto text-center" md="8">
-                <h2 className="title">¿Quiénes somos? ¿Qué hacemos?</h2>
-                <h5 className="description">
-                  <p> Insystemse es una empresa joven avocada al desarrollo de sistemas computacionales y la aplicación de la tecnología en general para solucionar problemas. </p>
-                  <p> Quienes colaboran en nuestros proyectos aman lo que hacen. Amamos lo que hacemos. </p>
-                  <p> Siempre apuntamos a las relaciones ganar-ganar. La optimización de los recursos de nuestros clientes, y los de nosotros, es
-                  lo que más nos importa. </p>
-                  <p> Obtener siempre el mejor resultado de la mejor manera posible. Por lo que todo lo que hacemos, lo hacemos con las mejores prácticas. </p>
+                <h2 className="title">¿Qué somos? ¿Qué hacemos?</h2>
+                <h5>
+                  <p> 
+                    Insystemse es una organización joven avocada al desarrollo y mantenimiento de sistemas computacionales y la aplicación de 
+                    la tecnología en general para solucionar problemas. 
+                  </p>
+                  <p> 
+                    Quienes se involucran a trabajar en nuestros proyectos aman lo que hacen. 
+                    Amamos lo que hacemos. 
+                  </p>
                 </h5>
               </Col>
             </Row>
@@ -58,22 +61,23 @@ function LandingPage() {
                     className="image-container image-left"
                     style={{
                       backgroundImage:
-                        "url(" + require("assets/img/login.jpg") + ")",
+                        // whiteboard pic
+                        "url(" + require("assets/img/whiteboard.jpg") + ")"
                     }}
                   >
                     <p className="blockquote blockquote-info">
-                      "Over the span of the satellite record, Arctic sea ice has
-                      been declining significantly, while sea ice in the
-                      Antarctichas increased very slightly" <br></br>
+                      “Sólo triunfa en el mundo quien se levanta y busca a las circunstancias, creándolas si no las encuentra.” 
                       <br></br>
-                      <small>-NOAA</small>
+                      <br></br>
+                      <small>George Bernard Shaw</small>
                     </p>
                   </div>
                   <div
                     className="image-container"
                     style={{
                       backgroundImage:
-                        "url(" + require("assets/img/bg3.jpg") + ")",
+                        // leito's asus pc pic
+                        "url(" + require("assets/img/leito-pc.jpg") + ")"
                     }}
                   ></div>
                 </Col>
@@ -82,175 +86,33 @@ function LandingPage() {
                     className="image-container image-right"
                     style={{
                       backgroundImage:
-                        "url(" + require("assets/img/bg1.jpg") + ")",
+                        // tiyo's acer pc pic
+                        "url(" + require("assets/img/tiyo-pc.jpg") + ")"
                     }}
                   ></div>
                   <h3>
-                    So what does the new record for the lowest level of winter
-                    ice actually mean
+                    Nuestros valores y forma de trabajar
                   </h3>
                   <p>
-                    The Arctic Ocean freezes every winter and much of the
-                    sea-ice then thaws every summer, and that process will
-                    continue whatever happens with climate change. Even if the
-                    Arctic continues to be one of the fastest-warming regions of
-                    the world, it will always be plunged into bitterly cold
-                    polar dark every winter. And year-by-year, for all kinds of
-                    natural reasons, there’s huge variety of the state of the
-                    ice.
+                    Creemos que perseverando se llega a buen puerto, en todo momento buscaremos la salida frente a los contratiempos.
                   </p>
+                  <p> 
+                    Siempre apuntamos a las relaciones ganar-ganar. La optimización 
+                    de los recursos de nuestros clientes y socios, y los nuestros, es
+                    lo que más nos importa. 
+                  </p>
+                  <p> 
+                    Buscamos en cada caso obtener el mejor resultado de la mejor manera posible. 
+                    Por lo que todo lo que hacemos, lo hacemos con las mejores prácticas. 
+                  </p> 
                   <p>
-                    For a start, it does not automatically follow that a record
-                    amount of ice will melt this summer. More important for
-                    determining the size of the annual thaw is the state of the
-                    weather as the midnight sun approaches and temperatures
-                    rise. But over the more than 30 years of satellite records,
-                    scientists have observed a clear pattern of decline,
-                    decade-by-decade.
+                    Construimos relaciones, en medida de que el contexto lo permita no negociamos por el ahora sin más.
+                    Buscamos socios felices, no clientes sin retorno.
                   </p>
-                  <p>
-                    The Arctic Ocean freezes every winter and much of the
-                    sea-ice then thaws every summer, and that process will
-                    continue whatever happens with climate change. Even if the
-                    Arctic continues to be one of the fastest-warming regions of
-                    the world, it will always be plunged into bitterly cold
-                    polar dark every winter. And year-by-year, for all kinds of
-                    natural reasons, there’s huge variety of the state of the
-                    ice.
-                  </p>
-                </Col>
-              </Row>
-            </div>
-          </Container>
-        </div>
-        <div className="section section-team text-center">
-          <Container>
-            <h2 className="title">Here is our team</h2>
-            <div className="team">
-              <Row>
-                <Col md="4">
-                  <div className="team-player">
-                    <img
-                      alt="..."
-                      className="rounded-circle img-fluid img-raised"
-                      src={require("assets/img/avatar.jpg")}
-                    ></img>
-                    <h4 className="title">Romina Hadid</h4>
-                    <p className="category text-info">Model</p>
-                    <p className="description">
-                      You can write here details about one of your team members.
-                      You can give more details about what they do. Feel free to
-                      add some{" "}
-                      <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                        links
-                      </a>{" "}
-                      for people to be able to follow them outside the site.
-                    </p>
-                    <Button
-                      className="btn-icon btn-round"
-                      color="info"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fab fa-twitter"></i>
-                    </Button>
-                    <Button
-                      className="btn-icon btn-round"
-                      color="info"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fab fa-instagram"></i>
-                    </Button>
-                    <Button
-                      className="btn-icon btn-round"
-                      color="info"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fab fa-facebook-square"></i>
-                    </Button>
-                  </div>
-                </Col>
-                <Col md="4">
-                  <div className="team-player">
-                    <img
-                      alt="..."
-                      className="rounded-circle img-fluid img-raised"
-                      src={require("assets/img/ryan.jpg")}
-                    ></img>
-                    <h4 className="title">Ryan Tompson</h4>
-                    <p className="category text-info">Designer</p>
-                    <p className="description">
-                      You can write here details about one of your team members.
-                      You can give more details about what they do. Feel free to
-                      add some{" "}
-                      <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                        links
-                      </a>{" "}
-                      for people to be able to follow them outside the site.
-                    </p>
-                    <Button
-                      className="btn-icon btn-round"
-                      color="info"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fab fa-twitter"></i>
-                    </Button>
-                    <Button
-                      className="btn-icon btn-round"
-                      color="info"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fab fa-linkedin"></i>
-                    </Button>
-                  </div>
-                </Col>
-                <Col md="4">
-                  <div className="team-player">
-                    <img
-                      alt="..."
-                      className="rounded-circle img-fluid img-raised"
-                      src={require("assets/img/eva.jpg")}
-                    ></img>
-                    <h4 className="title">Eva Jenner</h4>
-                    <p className="category text-info">Fashion</p>
-                    <p className="description">
-                      You can write here details about one of your team members.
-                      You can give more details about what they do. Feel free to
-                      add some{" "}
-                      <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                        links
-                      </a>{" "}
-                      for people to be able to follow them outside the site.
-                    </p>
-                    <Button
-                      className="btn-icon btn-round"
-                      color="info"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fab fa-google-plus"></i>
-                    </Button>
-                    <Button
-                      className="btn-icon btn-round"
-                      color="info"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fab fa-youtube"></i>
-                    </Button>
-                    <Button
-                      className="btn-icon btn-round"
-                      color="info"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fab fa-twitter"></i>
-                    </Button>
-                  </div>
+                  <p>  
+                    Procuramos brindar calidad y confianza. Ofreciendo buen soporte. 
+                    Confiamos en que es la mejor forma de crear productos y servicios de valor.
+                  </p>                 
                 </Col>
               </Row>
             </div>
@@ -258,9 +120,9 @@ function LandingPage() {
         </div>
         <div className="section section-contact-us text-center">
           <Container>
-            <h2 className="title">Want to work with us?</h2>
-            <p className="description">Your project is very important to us.</p>
-            <Row>
+            <h2 className="title">¿Trabajamos juntos?</h2>
+            <p className="lead">Cuéntanos cómo podríamos ayudarte, y nos pondremos en contacto contigo.</p>
+            <Row className="mt-5">
               <Col className="text-center ml-auto mr-auto" lg="6" md="8">
                 <InputGroup
                   className={
@@ -273,7 +135,7 @@ function LandingPage() {
                     </InputGroupText>
                   </InputGroupAddon>
                   <Input
-                    placeholder="First Name..."
+                    placeholder="Tu nombre o el de tu organización"
                     type="text"
                     onFocus={() => setFirstFocus(true)}
                     onBlur={() => setFirstFocus(false)}
@@ -290,7 +152,7 @@ function LandingPage() {
                     </InputGroupText>
                   </InputGroupAddon>
                   <Input
-                    placeholder="Email..."
+                    placeholder="Email"
                     type="text"
                     onFocus={() => setLastFocus(true)}
                     onBlur={() => setLastFocus(false)}
@@ -298,10 +160,9 @@ function LandingPage() {
                 </InputGroup>
                 <div className="textarea-container">
                   <Input
-                    cols="80"
                     name="name"
-                    placeholder="Type a message..."
-                    rows="4"
+                    placeholder="¿Qué tienes para decirnos?"
+                    rows="10"
                     type="textarea"
                   ></Input>
                 </div>
@@ -309,19 +170,19 @@ function LandingPage() {
                   <Button
                     block
                     className="btn-round"
-                    color="info"
+                    color="dark"
                     href="#pablo"
                     onClick={(e) => e.preventDefault()}
                     size="lg"
                   >
-                    Send Message
+                    Enviar
                   </Button>
                 </div>
               </Col>
             </Row>
           </Container>
         </div>
-        <DefaultFooter />
+        <DarkFooter />
       </div>
     </>
   );

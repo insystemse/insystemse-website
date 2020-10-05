@@ -27,14 +27,17 @@ function LandingPageHeader() {
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/bg6.jpg") + ")",
+            backgroundImage: 
+              // agu soldando pic
+              "url(" + require("assets/img/agu-soldando.jpg") + ")"
           }}
           ref={pageHeader}
         ></div>
         <div className="content-center">
           <Container>
-            <h1 className="title"> Esto es Insystemse </h1>
-
+            <h1 className="title"> 
+              Esto es Insystemse
+            </h1>
           </Container>
         </div>
       </div>
