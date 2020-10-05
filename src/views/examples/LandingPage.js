@@ -61,8 +61,7 @@ function LandingPage() {
                     className="image-container image-left"
                     style={{
                       backgroundImage:
-                        // whiteboard pic
-                        "url(" + require("assets/img/whiteboard.jpg") + ")"
+                        "url(" + require("assets/img/leito-pc.jpg") + ")"
                     }}
                   >
                     <p className="blockquote blockquote-info">
@@ -76,8 +75,7 @@ function LandingPage() {
                     className="image-container"
                     style={{
                       backgroundImage:
-                        // leito's asus pc pic
-                        "url(" + require("assets/img/leito-pc.jpg") + ")"
+                        "url(" + require("assets/img/parlante.jpg") + ")"
                     }}
                   ></div>
                 </Col>
@@ -86,7 +84,6 @@ function LandingPage() {
                     className="image-container image-right"
                     style={{
                       backgroundImage:
-                        // tiyo's acer pc pic
                         "url(" + require("assets/img/tiyo-pc.jpg") + ")"
                     }}
                   ></div>

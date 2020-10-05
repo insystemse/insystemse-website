@@ -25,19 +25,25 @@ function LandingPageHeader() {
     <>
       <div className="page-header">
         <div
-          className="page-header-image"
+          className="page-header-image shine"
           style={{
             backgroundImage: 
               // agu soldando pic
-              "url(" + require("assets/img/agu-soldando.jpg") + ")"
+              "url(" + require("assets/img/agu-motor.jpg") + ")"
           }}
           ref={pageHeader}
         ></div>
         <div className="content-center">
           <Container>
-            <h1 className="title"> 
-              Esto es Insystemse
-            </h1>
+
+            <img
+              alt="logo insystemse"
+              className="n-logo"
+              src={require("assets/img/logo-insystemse-blanco.png")}
+            ></img>
+            <h2> 
+              Tus ideas, nuestras soluciones.
+            </h2>
           </Container>
         </div>
       </div>
