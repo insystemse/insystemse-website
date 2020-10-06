@@ -16,6 +16,13 @@
 
  */
 
+
+// Custom Insystemse's styles
+@import "custom/general";
+@import "custom/pictures-n-effects";
+@import "custom/variables";
+
+//Now UI kit things
 @import 'now-ui-kit/variables';
 @import 'now-ui-kit/mixins';
 
@@ -63,5 +70,3 @@
 // React
 @import "react/react-differences";
 
-// Custom Insystemse's styles
-@import "custom/utils";

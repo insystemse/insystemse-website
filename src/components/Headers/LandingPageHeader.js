@@ -25,10 +25,9 @@ function LandingPageHeader() {
     <>
       <div className="page-header">
         <div
-          className="page-header-image shine"
+          className="page-header-image header-background"
           style={{
             backgroundImage: 
-              // agu soldando pic
               "url(" + require("assets/img/agu-motor.jpg") + ")"
           }}
           ref={pageHeader}

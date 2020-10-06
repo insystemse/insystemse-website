@@ -40,7 +40,7 @@ function LandingPage() {
           <Container>
             <Row>
               <Col className="ml-auto mr-auto text-center" md="8">
-                <h2 className="title">¿Qué somos? ¿Qué hacemos?</h2>
+                <h2 className="title text-primary">¿Qué somos? ¿Qué hacemos?</h2>
                 <h5>
                   <p> 
                     Insystemse es una organización joven avocada al desarrollo y mantenimiento de sistemas computacionales y la aplicación de 
@@ -58,13 +58,13 @@ function LandingPage() {
               <Row>
                 <Col md="6">
                   <div
-                    className="image-container image-left"
+                    className="image-container image-left cool-gradient"
                     style={{
                       backgroundImage:
                         "url(" + require("assets/img/leito-pc.jpg") + ")"
                     }}
                   >
-                    <p className="blockquote blockquote-info">
+                    <p className="blockquote blockquote-primary">
                       “Sólo triunfa en el mundo quien se levanta y busca a las circunstancias, creándolas si no las encuentra.” 
                       <br></br>
                       <br></br>
@@ -72,7 +72,7 @@ function LandingPage() {
                     </p>
                   </div>
                   <div
-                    className="image-container"
+                    className="image-container cool-gradient"
                     style={{
                       backgroundImage:
                         "url(" + require("assets/img/parlante.jpg") + ")"
@@ -81,13 +81,13 @@ function LandingPage() {
                 </Col>
                 <Col md="5">
                   <div
-                    className="image-container image-right"
+                    className="image-container image-right cool-gradient"
                     style={{
                       backgroundImage:
                         "url(" + require("assets/img/tiyo-pc.jpg") + ")"
                     }}
                   ></div>
-                  <h3>
+                  <h3 className="text-primary">
                     Nuestros valores y forma de trabajar
                   </h3>
                   <p>
@@ -132,7 +132,7 @@ function LandingPage() {
                     </InputGroupText>
                   </InputGroupAddon>
                   <Input
-                    placeholder="Tu nombre o el de tu organización"
+                    placeholder="Tu nombre/Tu organización"
                     type="text"
                     onFocus={() => setFirstFocus(true)}
                     onBlur={() => setFirstFocus(false)}
@@ -167,7 +167,7 @@ function LandingPage() {
                   <Button
                     block
                     className="btn-round"
-                    color="dark"
+                    color="primary"
                     href="#pablo"
                     onClick={(e) => e.preventDefault()}
                     size="lg"

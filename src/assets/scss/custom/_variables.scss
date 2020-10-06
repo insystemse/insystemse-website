@@ -1,0 +1,33 @@
+$default-color:              #888888;
+$default-states-color:       lighten($default-color, 6%);
+$default-color-opacity:      rgba(182, 182, 182, .6);
+
+$primary-color:              #f96332;
+$primary-states-color:       lighten($primary-color, 6%);
+$primary-color-opacity:      rgba(249, 99, 50, .3);
+$primary-color-alert:        rgba(249, 99, 50, .8);
+
+$success-color:              #18ce0f;
+$success-states-color:       lighten($success-color, 6%);
+$success-color-opacity:      rgba(24, 206, 15, .3);
+$success-color-alert:        rgba(24, 206, 15, .8);
+
+$info-color:                 #2CA8FF;
+$info-states-color:          lighten($info-color, 6%);
+$info-color-opacity:         rgba(44, 168, 255, .3);
+$info-color-alert:           rgba(44, 168, 255, .8);
+
+$warning-color:              #FFB236;
+$warning-states-color:       lighten($warning-color, 6%);
+$warning-color-opacity:      rgba(255, 178, 54, .3);
+$warning-color-alert:        rgba(255, 178, 54, .8);
+
+$danger-color:               #FF3636;
+$danger-states-color:        lighten($danger-color, 6%);
+$danger-color-opacity:       rgba(255, 54, 54, .3);
+$danger-color-alert:         rgba(255, 54, 54, .8);
+
+$theme-colors: (
+  "loco": #0074d9,
+  "loca": #ff4136
+);
