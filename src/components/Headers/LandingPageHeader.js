@@ -41,7 +41,9 @@ function LandingPageHeader() {
               src={require("assets/img/logo-insystemse-blanco.png")}
             ></img>
             <h2> 
-              Tus ideas, nuestras soluciones.
+              <span className="slogan">Tus ideas, </span>
+              <span> </span>
+              <span className="slogan">nuestras soluciones.</span>
             </h2>
           </Container>
         </div>

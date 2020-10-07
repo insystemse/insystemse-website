@@ -1,0 +1,98 @@
+// mixin for parameterizing shimmer gradients
+@mixin shimmer-gradient($color1, $color2) {
+    background: linear-gradient(-45deg, $color1, $color2, $color1, $color2);
+    background-size: 400% 400%;
+}
+
+// Shimmer ***********************************************************************
+// *******************************************************************************
+.shimmer::before {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    //gradient background
+    @include shimmer-gradient(rgba(189, 155, 123, 0.3), rgba(68, 33, 10, 0.3));
+	animation: shimmer 15s ease infinite;
+}
+
+@keyframes shimmer {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.header-shimmer::before {
+    @extend .shimmer;
+    @include shimmer-gradient(rgba(189, 155, 123, 0.5), rgba(68, 33, 10, 0.5));
+}
+
+// Pictures ***************************************************************************
+// ************************************************************************************
+.cool-gradient::before {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(255, 196, 141, 0.5), rgba(97, 48, 15, 0.6));
+    background-size: cover;
+    border-radius: .25rem;
+}
+
+// Text *******************************************************************************
+// ************************************************************************************
+
+.slogan {
+  display:inline-block;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+.slogan:first-of-type {    /* For increasing performance 
+                       ID/Class should've been used. 
+                       For a small demo 
+                       it's okaish for now */
+  animation: showup 7s 1;
+}
+
+.slogan:last-of-type {
+  width:0px;
+  animation: reveal 7s forwards;
+}
+
+.slogan:last-of-type span {
+  margin-left:-355px;
+  animation: slidein 7s 1;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    100% {opacity:1;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:355px;}
+    80% {opacity:1;}
+    100% {opacity:1;width:355px;}
+}
+
