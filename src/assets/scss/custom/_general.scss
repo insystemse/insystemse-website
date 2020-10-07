@@ -1,0 +1,19 @@
+// navbar when scrolled down
+.navbar:not(.navbar-transparent) {
+    @extend .shimmer;
+    background-color: $black-color;
+}
+
+.footer {
+    @extend .shimmer;
+    color: $white-color;
+    background-color: $black-color;
+    padding: 1.1rem 0;
+    height: 3.5rem;
+    
+    &::before {
+        top: unset;
+        height: 3.5rem;
+        margin-top: -1.1rem;
+    } 
+}

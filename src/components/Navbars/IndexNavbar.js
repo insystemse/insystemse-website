@@ -50,7 +50,7 @@ function IndexNavbar() {
           }}
         />
       ) : null}
-      <Navbar className={"fixed-top " + navbarColor} expand="lg" data-background-color="black">
+      <Navbar className={"fixed-top " + navbarColor} expand="lg">
         <Container>
           <div className="navbar-translate">
             <button

@@ -25,7 +25,7 @@ function LandingPageHeader() {
     <>
       <div className="page-header">
         <div
-          className="page-header-image header-background"
+          className="page-header-image header-shimmer"
           style={{
             backgroundImage: 
               "url(" + require("assets/img/agu-motor.jpg") + ")"
