@@ -16,6 +16,8 @@
 
  */
 
+// Custom Insystemse's variables
+@import "custom/variables";
 
 //Now UI kit things
 @import 'now-ui-kit/variables';
@@ -67,7 +69,6 @@
 
 
 // Custom Insystemse's styles
-@import "custom/variables";
 @import "custom/cool-stuff";
 @import "custom/general";
 @import "custom/responsive";

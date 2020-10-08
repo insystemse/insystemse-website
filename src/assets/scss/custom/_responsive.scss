@@ -14,4 +14,10 @@
     }
 }
 
+.sidebar-collapse .navbar-collapse{
+    background-color: $black-color;
 
+    &:before{
+        background: unset;
+    }
+}
