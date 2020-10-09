@@ -36,7 +36,7 @@ function LandingPage() {
       <IndexNavbar />
       <div className="wrapper">
         <LandingPageHeader />
-        <div className="section section-about-us">
+        <div className="section section-about-us bg-light-background">
           <Container>
             <Row>
               <Col className="ml-auto mr-auto text-center" md="8">
@@ -87,7 +87,7 @@ function LandingPage() {
                         "url(" + require("assets/img/tiyo-pc.jpg") + ")"
                     }}
                   ></div>
-                  <h3 className="text-primary">
+                  <h3 className="text-secondary">
                     Nuestros valores y forma de trabajar
                   </h3>
                   <p>
@@ -115,11 +115,11 @@ function LandingPage() {
             </div>
           </Container>
         </div>
-        <div className="section section-contact-us text-center">
+        <div className="section section-contact-us text-center bg-light-background">
           <Container>
-            <h2 className="title">¿Trabajamos juntos?</h2>
+            <h2 className="title text-primary">¿Trabajamos juntos?</h2>
             <p className="lead">Cuéntanos cómo podríamos ayudarte, y nos pondremos en contacto contigo.</p>
-            <Row className="mt-5">
+            <Row className="mt-3">
               <Col className="text-center ml-auto mr-auto" lg="6" md="8">
                 <InputGroup
                   className={

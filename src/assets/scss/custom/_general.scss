@@ -1,3 +1,32 @@
+.bg-light-background {
+    background-color: $light-background;
+}
+
+.text-secondary {
+    color: $brand-secondary !important;
+}
+
+.input-group-text {
+    background-color: $light-background;
+
+    .input-group-focus &{
+        background-color: $light-background;
+    }
+}
+.input-group,
+.form-group{
+  .input-group-prepend{
+    .input-group-text {
+      border-left: 1px solid $light-gray;
+    }
+  }
+}
+.form-control {
+    &:focus{
+        background-color: $light-background;
+    }
+}
+
 // navbar when scrolled down
 .navbar:not(.navbar-transparent) {
     @extend .shimmer;
