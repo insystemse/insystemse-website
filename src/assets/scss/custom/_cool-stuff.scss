@@ -14,7 +14,7 @@
     top: 0;
     left: 0;
     //gradient background
-    @include shimmer-gradient(rgba(207, 177, 148, 0.3), rgba(68, 33, 10, 0.3));
+    @include shimmer-gradient(rgba(207, 170, 148, 0.3), rgba(68, 28, 10, 0.3));
 	animation: shimmer 15s ease infinite;
 }
 
@@ -32,7 +32,7 @@
 
 .header-shimmer::before {
     @extend .shimmer;
-    @include shimmer-gradient(rgba(212, 169, 127, 0.5), rgba(43, 21, 7, 0.5));
+    @include shimmer-gradient(rgba(8, 33, 41, 0.6), rgba(53, 30, 23, 0.6));
 }
 
 // Pictures ***************************************************************************
@@ -44,7 +44,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(to bottom, rgba(95,138,173, 0.5), rgba(97, 48, 15, 0.6));
+    background: linear-gradient(to bottom, rgba(35, 138, 173, 0.5), rgba(208, 106, 93, 0.5));
     background-size: cover;
     border-radius: .25rem;
 }
