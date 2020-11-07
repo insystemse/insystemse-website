@@ -73,16 +73,16 @@ function IndexNavbar() {
             navbar
           >
             <Nav navbar>
-              <NavItem>
+              {/* <NavItem>
                 <NavLink
                   href=""
                 >
                   <i className="now-ui-icons education_agenda-bookmark"></i>
                   <p>Portfolio</p>
                 </NavLink>
-              </NavItem>
+              </NavItem> */}
               
-              <NavItem>
+              {/* <NavItem>
                 <NavLink
                   href="#"
                   target="_blank"
@@ -94,9 +94,9 @@ function IndexNavbar() {
                 <UncontrolledTooltip target="#linkedin-tooltip">
                   Seguinos en Linkedin
                 </UncontrolledTooltip>
-              </NavItem>
+              </NavItem> */}
 
-              <NavItem>
+              {/* <NavItem>
                 <NavLink
                   href="#"
                   target="_blank"
@@ -108,11 +108,11 @@ function IndexNavbar() {
                 <UncontrolledTooltip target="#twitter-tooltip">
                   Seguinos en Twitter
                 </UncontrolledTooltip>
-              </NavItem>
+              </NavItem> */}
 
               <NavItem>
                 <NavLink
-                  href="#"
+                  href="https://www.github.com/insystemse"
                   target="_blank"
                   id="github-tooltip"
                 >
@@ -120,7 +120,7 @@ function IndexNavbar() {
                   <p className="d-lg-none d-xl-none">GitHub</p>
                 </NavLink>
                 <UncontrolledTooltip target="#github-tooltip">
-                  Seguinos en GitHub
+                  Encuéntranos en GitHub
                 </UncontrolledTooltip>
               </NavItem>
 

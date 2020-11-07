@@ -44,7 +44,7 @@ function LandingPage() {
                 <h5>
                   <p> 
                     Somos tu socio tecnológico. Desarrollamos y mantenemos sistemas computacionales completos, o ese módulo de tu sistema 
-                    con el que no te rinde lidiar directamente.
+                    con el que no quieres lidiar directamente.
                   </p>
                 </h5>
               </Col>
@@ -128,7 +128,7 @@ function LandingPage() {
                     </InputGroupText>
                   </InputGroupAddon>
                   <Input
-                    placeholder="Tu nombre/Tu organización"
+                    placeholder="Tu nombre/organización"
                     type="text"
                     onFocus={() => setFirstFocus(true)}
                     onBlur={() => setFirstFocus(false)}
@@ -145,7 +145,7 @@ function LandingPage() {
                     </InputGroupText>
                   </InputGroupAddon>
                   <Input
-                    placeholder="Email"
+                    placeholder="Tu email de contacto"
                     type="text"
                     onFocus={() => setLastFocus(true)}
                     onBlur={() => setLastFocus(false)}
