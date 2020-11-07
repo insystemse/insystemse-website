@@ -43,12 +43,8 @@ function LandingPage() {
                 <h2 className="title text-primary">¿Qué somos? ¿Qué hacemos?</h2>
                 <h5>
                   <p> 
-                    Insystemse es una organización joven avocada al desarrollo y mantenimiento de sistemas computacionales y la aplicación de 
-                    la tecnología en general para solucionar problemas. 
-                  </p>
-                  <p> 
-                    Quienes se involucran a trabajar en nuestros proyectos aman lo que hacen. 
-                    Amamos lo que hacemos. 
+                    Somos tu socio tecnológico. Desarrollamos y mantenemos sistemas computacionales completos, o ese módulo de tu sistema 
+                    con el que no te rinde lidiar directamente.
                   </p>
                 </h5>
               </Col>
