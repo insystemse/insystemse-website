@@ -32,7 +32,7 @@
 
 .header-shimmer::before {
     @extend .shimmer;
-    @include shimmer-gradient(rgba(8, 33, 41, 0.6), rgba(53, 30, 23, 0.6));
+    @include shimmer-gradient(darken(rgba(35, 138, 173, 0.5), 30%), darken(rgba(208, 106, 93, 0.5), 30%));
 }
 
 // Pictures ***************************************************************************
